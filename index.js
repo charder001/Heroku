@@ -8,6 +8,7 @@ var path = require("path")
 var find = require("array-find")
 var mongojs = require("mongojs")
 var mongoose = require('mongoose')
+var PORT = process.env.PORT
 
 //linking MongoJS to MongoDB Database called "MotoMatch" with the collection "users" 
 var db = mongojs("MotoMatch", ["users"])
@@ -60,7 +61,7 @@ express()
   .delete("/users/delete/:id", removeuser)
 
   //Listen on the defined port
-  .listen(3007, function () {
+  .listen(PORT, function () {
     console.log("Server listening on port 3007")
   })
 
