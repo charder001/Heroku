@@ -15,6 +15,8 @@ var MONGODB_URI = process.env.MONGODB_URI
 var db = mongojs("MotoMatch", ["users"])
 var ObjectId = mongojs.ObjectID
 
+//test
+
 //Linking mongoose to MongoDB Database called "MotoMatch"
 mongoose.connect(MONGODB_URI/*'mongodb://' + "localhost" + '/' + "MotoMatch"*/, {
   useNewUrlParser: true
