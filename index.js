@@ -16,9 +16,10 @@ var db = mongojs("MotoMatch", ["users"])
 var ObjectId = mongojs.ObjectID
 
 //Linking mongoose to MongoDB Database called "MotoMatch"
-mongoose.connect('mongodb://' + "localhost" + '/' + "MotoMatch", {
+mongoose.connect(MONGODB_URI/*'mongodb://' + "localhost" + '/' + "MotoMatch"*/, {
   useNewUrlParser: true
 })
+
 
 //Defining data scheme
 var Schema = mongoose.Schema
