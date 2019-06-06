@@ -9,6 +9,7 @@ var find = require("array-find")
 var mongojs = require("mongojs")
 var mongoose = require('mongoose')
 var PORT = process.env.PORT
+var MONGODB_URI = process.env.MONGODB_URI
 
 //linking MongoJS to MongoDB Database called "MotoMatch" with the collection "users" 
 var db = mongojs("MotoMatch", ["users"])
